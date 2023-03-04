@@ -1,10 +1,11 @@
 import React from "react";
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
+import counterReducer,{  sliceKey as counterSliceKey,} from '../features/counter/slice';
 
 
 const rootReducer = {
- 
+ [counterSliceKey]:counterReducer
 };
 
 export const store = configureStore({
