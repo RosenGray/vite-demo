@@ -18,6 +18,6 @@
     "types":["vitest/importMeta"]
 
   },
-  "include": ["src"],
+  "include": ["src", "testInit/sumtest.ts", "testInit/sum.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
